@@ -23,8 +23,10 @@
     margin: 0 auto;
     border-radius: 1em;
     margin-top: 1.2em;
-    backdrop-filter: blur(10em);
-    border: 1px solid #fff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    background-color: rgba(17, 24, 39, 0.4); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;   
 }
 
 nav ul {
@@ -42,4 +44,21 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #548ef3;
+}
+
+#about {
+    display: flex;
+    gap: 1em;
+}
+
+#hero-text {
+    font-size: 1.8em;
+    width: 50em;
+    margin-top: 5em;
+    margin-left: 5em;
+}
+
+#profile-pic{
+    width:40em;
+    margin-top: -3em;
 }
