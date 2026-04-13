@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shane Henricus</title>
     <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <img src="/Assets/bg.png" id="back-img">
 
-    <!-- Header with Navigation Bar -->
     <header id="navbar">
         <h1>Portfolio</h1>
         <nav>
@@ -22,31 +22,87 @@
         </nav>
     </header>
 
-    <!-- About Section -->
     <section id="about">
         <div id="hero-text">
             <h3>Hello! I'm Shane Henricus</h3> <br>
             <p>A passionate web designer and developer with a love for creating dynamic, responsive and visually stunning websites with clean code.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/shane-henricus-496034297/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Shane-HCode" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/_shanehenri/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/share/1FNRN2Tj4B/?mibextid=wwXIfr" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
         </div>
-
         <img src="/Assets/pp.png" alt="Shane Henricus" id="profile-pic">
     </section>
 
-    <!-- Blogs Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Project 1:</strong> A personal portfolio website showcasing my skills and projects.</li>
-            <li><strong>Project 2:</strong> An e-commerce website built with React and Node.js.</li>
-            <li><strong>Project 3:</strong> A blog platform developed using Django.</li>
-        </ul>
+    <section id="blogs">
+        <h2 class="section-title">Blogs</h2>
+        <div class="cards-container">            
+            <div class="card">
+                <div class="image-container">
+                    <img src="/Assets/blog1.jpg" alt="Blog 1" class="card-image">
+                    <div class="card-summary">
+                        <p>Explore how animation brings screens to life from flipbooks to CGI, using motion to teach, advertise, and tell stories in seconds.</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <a href="https://medium.com/@shanem.henricus/the-moving-story-how-animation-brings-life-into-screens-158be1fc3047" target="_blank">
+                        The Moving Story: How Animation Brings Life into Screens
+                    </a>
+                </div>
+            </div> 
+        </div>          
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at:
-            
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="cards-container">            
+            <div class="card">
+                <div class="image-container">
+                    <img src="/Assets/proj1.jpg" alt="Project 1" class="card-image">
+                    <div class="card-summary">
+                        <p>Using earthy browns, black, and cream tones for a warm, rustic feel. It's fully responsive across devices, with clean tables and subtle hover effects that enhance its inviting aesthetic.</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <a href="https://github.com/Shane-HCode/Cafe-webpage" target="_blank">
+                        Cafe Website
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-container">
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" id="submit-btn">Send Message</button>
+            </form>
+            <div id="form-response" class="hidden"></div>
+        </div>
+    </section>
+    <script src="Script.js"></script>
 </body>
 </html>
