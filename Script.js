@@ -18,10 +18,27 @@ document.addEventListener('DOMContentLoaded', () => {
         // Clear the form fields
         contactForm.reset();
 
-        // Optional: Hide the message after 5 seconds
+        // Optional: Hide the message after 10 seconds
         setTimeout(() => {
             formResponse.classList.add('hidden');
             formResponse.classList.remove('success');
         }, 10000);
+    });
+
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.querySelector('#navbar nav');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        nav.classList.toggle('open');
+    });
+
+    // Close menu when a nav link is clicked
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('open');
+            nav.classList.remove('open');
+        });
     });
 });
