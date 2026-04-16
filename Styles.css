@@ -5,6 +5,10 @@
   color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -560,24 +564,23 @@ section {
   }
 
   #education-container {
-    gap: 1.5rem;
-    padding: 2rem 1.5rem;
+    gap: 2rem;
   }
 
   .edu-item {
-    max-width: 100%;
+    max-width: 350px;
   }
 
   .edu-degree {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
   }
 
-  .edu-result {
-    font-size: 1.1rem;
+  .edu-status {
+    font-size: 1.6rem;
   }
 
   .edu-institution {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 
   .edu-icon-img {
@@ -585,22 +588,17 @@ section {
     height: 2.2rem;
   }
 
-  .skill-item {
-    flex: 0 1 180px;
-    max-width: 200px;
-  }
-
   .skill-icon-img {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 5rem;
+    height: 5rem;
   }
 
   .skill-name {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   .skill-level {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -662,24 +660,18 @@ section {
   #education-container {
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem 1rem;
-  }
-
-  .edu-item {
-    max-width: 100%;
-    width: 100%;
   }
 
   .edu-degree {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
-  .edu-result {
-    font-size: 0.9rem;
+  .edu-status {
+    font-size: 1.2rem;
   }
 
   .edu-institution {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .skill-item {
@@ -688,20 +680,19 @@ section {
   }
 
   .skill-icon-img {
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 4rem;
+    height: 4rem;
   }
 
   .skill-name {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .skill-level {
-    font-size: 0.78rem;
+    font-size: 1.1rem;
   }
 }
 
-/* subtle floating animation for contact container */
 @keyframes gentleFloat {
   0% {
     transform: translateY(0px);
