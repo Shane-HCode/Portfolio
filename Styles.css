@@ -23,6 +23,20 @@ a {
   z-index: -1;
 }
 
+body {
+    /* This creates the necessary space at the top so content isn't under the notch */
+    padding-top: env(safe-area-inset-top);
+    /* This ensures content at the bottom isn't hidden by the home indicator */
+    padding-bottom: env(safe-area-inset-bottom);
+    
+    /* Optional: If you have content touching the sides */
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    
+    /* Ensure the body doesn't shrink or get weird scroll issues */
+    min-height: 100vh;
+}
+
 #navbar {
   padding: 0.8em 2em;
   display: flex;
